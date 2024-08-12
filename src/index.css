@@ -1,0 +1,68 @@
+/* CARTAS DE PRODUCTOS */
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.producto .comprar {
+    text-decoration: none;
+    background-color: var(--clr-main);
+    color: rgb(5, 5, 5);
+    width: max-content;
+    transition: .2s;
+}
+
+.producto .comprar:hover {
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-block: 2rem;
+}   
+
+.producto-detalle {
+    padding-block: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.producto-detalle img {
+    width: 50%;
+}
+
+.producto-detalle-info h3 {
+    font-size: 2rem;
+}
+
+.categoria {
+    font-size: .8rem;
+    color: #424242;
+    margin-top: 1rem;
+}
+
+.precio {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+/* ESTILOS LOGO BARRA  */
+
+.image {
+    padding-right: 14rem;
+    
+}
+
+.titulo h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+  }

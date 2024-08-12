@@ -1,6 +1,26 @@
+import { useEffect, useState } from "react";
+import { pedirProductos } from "../helpers/pedirProductos";
+import ItemList from "./ItemList";
 
-export const ItemListContainer = (props) => {
+const ItemListContainer = () => {
 
-    // eslint-disable-next-line react/prop-types
-    return <h1>{props.greeting}</h1>;
+    const [productos, setProductos] = useState([]);
+    
+    useEffect(() => {
+      pedirProductos()
+      .then((res) => {
+        setProductos(res)
+      }
+    ) 
+    }, [])
+    
+
+  return (
+    <div>
+      
+      <ItemList productos = {productos}/>
+    </div>
+  )
 }
+
+export default ItemListContainer

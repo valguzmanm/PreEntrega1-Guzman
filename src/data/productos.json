@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "titulo": "Pollo - 1000g",
+        "descripcion": "Sabor pollo de 1000g",
+        "categoria": "pollo",
+        "imagen": "/src/images/pollo-1000g.png",
+        "precio": 16000,
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "titulo": "Pollo - 500g",
+        "descripcion": "Sabor pollo de 500g",
+        "categoria": "pollo",
+        "imagen": "/src/images/pollo-500g.png",
+        "precio": 8000,
+        "stock": 10
+    },
+    {
+        "id": 3,
+        "titulo": "Salmón - 1000g",
+        "descripcion": "Sabor salmón de 1000g",
+        "categoria": "salmon",
+        "imagen": "/src/images/salmon-1000g.png",
+        "precio": 20000,
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "titulo": "Salmón - 1000g",
+        "descripcion": "Sabor salmón de 1000g",
+        "categoria": "salmon",
+        "imagen": "/src/images/salmon-500g.png",
+        "precio": 10000,
+        "stock": 10
+    }
+]

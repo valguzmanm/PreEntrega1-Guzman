@@ -2,18 +2,20 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { CartWidget } from './CartWidget';
-import { BonitaLogo } from './BonitaLogo';
+import { LogoReal } from './Logoreal';
 
 export const NavBar = () => {
     return (
   <Navbar expand="lg" className="bg-body-tertiary">
     <Container>
-      <BonitaLogo/>
+      <LogoReal />
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#Maquillaje">Maquillaje</Nav.Link>
-          <Nav.Link href="#Skincare">Skincare</Nav.Link>
+          <Nav.Link href="#">Inicio</Nav.Link>
+          <Nav.Link href="#">Productos</Nav.Link>
+          <Nav.Link href="#">Nosotros</Nav.Link>
+          <Nav.Link href="#">Contáctanos</Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <CartWidget/> 
