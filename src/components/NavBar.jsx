@@ -2,35 +2,29 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import { CartWidget } from './CartWidget';
 import { LogoReal } from './Logoreal';
 
 export const NavBar = () => {
-    return (
-  <Navbar expand="lg" className="bg-body-tertiary">
-    <Container>
-      <LogoReal />
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="/">Inicio</Nav.Link>
-          <NavDropdown title="Productos" id="basic-nav-dropdown">
-           <NavDropdown.Item href="/productos/pollo">Pollo</NavDropdown.Item>
-           <NavDropdown.Item href="/productos/salmon">Salmón</NavDropdown.Item>
-          </NavDropdown>
-
-
-
-
-          {/* <Nav.Link href="#">Productos</Nav.Link>
-          <Nav.Link href="#">Pollo</Nav.Link>
-          <Nav.Link href="#">Salmón</Nav.Link> */}
-          <Nav.Link href="/nosotros">Nosotros</Nav.Link>
-          <Nav.Link href="#">Contáctanos</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-      <CartWidget/> 
-    </Container>
-  </Navbar>
-    );
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <LogoReal />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Link to="/" className="nav-link">Inicio</Link>
+            <NavDropdown title="Productos" id="basic-nav-dropdown">
+              <Link to="/productos/pollo" className="dropdown-item">Pollo</Link>
+              <Link to="/productos/salmon" className="dropdown-item">Salmón</Link>
+            </NavDropdown>
+            <Link to="/nosotros" className="nav-link">Nosotros</Link>
+            <Link to="/contacto" className="nav-link">Contáctanos</Link>
+          </Nav>
+        </Navbar.Collapse>
+        <CartWidget />
+      </Container>
+    </Navbar>
+  );
 }

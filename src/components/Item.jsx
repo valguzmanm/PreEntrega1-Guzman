@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Item = ({ producto }) => {
   return (
@@ -12,7 +13,9 @@ const Item = ({ producto }) => {
           <br />
           Categoría: {producto.categoria}
         </Card.Text>
-        <Button variant="dark" href={`/item/${producto.id}`}>Comprar</Button>
+        <Link to={`/item/${producto.id}`}>
+          <Button variant="dark">Comprar</Button>
+        </Link>
       </Card.Body>
     </Card>
   )
