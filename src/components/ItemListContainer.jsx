@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { pedirProductos } from "../helpers/pedirProductos";
 import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
+    const categoria = useParams().categoria;
     
     useEffect(() => {
       pedirProductos()
