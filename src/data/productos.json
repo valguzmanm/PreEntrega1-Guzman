@@ -1,37 +1,41 @@
 [
     {
         "id": 1,
-        "titulo": "Pollo - 1000g",
-        "descripcion": "Sabor pollo de 1000g",
-        "categoria": "pollo",
+        "titulo": "Pollo",
+        "descripcion": "Comida para perro de 1000g, rica en proteínas de pollo para una nutrición completa. ",
+        "categoria": "Pollo",
         "imagen": "/src/images/pollo-1000g.png",
+        "contenido": "1000g",
         "precio": 16000,
         "stock": 10
     },
     {
         "id": 2,
-        "titulo": "pollo - 500g",
-        "descripcion": "Sabor pollo de 500g",
-        "categoria": "pollo",
+        "titulo": "Pollo",
+        "descripcion": "Comida para perro de 500g, con todo el sabor y nutrientes del pollo en una porción compacta.",
+        "categoria": "Pollo",
         "imagen": "/src/images/pollo-500g.png",
+        "contenido": "500g",
         "precio": 8000,
         "stock": 10
     },
     {
         "id": 3,
-        "titulo": "Salmón - 1000g",
-        "descripcion": "Sabor salmón de 1000g",
-        "categoria": "salmon",
+        "titulo": "Salmón",
+        "descripcion": "Comida para perro de 1000g, con salmón fresco para una dieta equilibrada y saludable.",
+        "categoria": "Salmón",
         "imagen": "/src/images/salmon-1000g.png",
+        "contenido": "1000g",
         "precio": 20000,
         "stock": 10
     },
     {
         "id": 4,
-        "titulo": "Salmón - 1000g",
-        "descripcion": "Sabor salmón de 1000g",
-        "categoria": "salmon",
+        "titulo": "Salmón",
+        "descripcion": "Comida para perro de 500g, con el sabor y beneficios del salmón en un tamaño ideal.",
+        "categoria": "Salmón",
         "imagen": "/src/images/salmon-500g.png",
+        "contenido": "500g",
         "precio": 10000,
         "stock": 10
     }
