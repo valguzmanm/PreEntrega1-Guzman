@@ -140,7 +140,6 @@
     background-color: var(--clr-main-light);
     display: flex;
     flex-direction: column;
-    gap: .5rem;
 }
 
 .producto > img {
@@ -247,4 +246,31 @@
     outline: 2px solid var(--clr-main);
 }
 
-/* estilos carta */
+/* estilos carrusel */
+.carousel-container {
+    width: 60%; 
+    margin: 0 auto; 
+  }
+  
+  .main-title {
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  .carousel-container {
+    flex: 1; 
+  }
+  
+  .text-container {
+    flex: 1; 
+    text-align: center;
+  }
+  
+  
