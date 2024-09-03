@@ -19,7 +19,7 @@ export const Nosotros = () => {
   return (
     <div className="container">
       <h1 className="main-title">Nosotros</h1>
-      <div className="content-container">
+      <div className="content-container ">
         <div className="carousel-container">
           <Carousel>
             <Carousel.Item>
@@ -28,10 +28,6 @@ export const Nosotros = () => {
                 src={comiendoImage}
                 alt="First slide"
               />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -39,10 +35,7 @@ export const Nosotros = () => {
                 src={manasaImage}
                 alt="Second slide"
               />
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
+              
             </Carousel.Item>
           </Carousel>
         </div>

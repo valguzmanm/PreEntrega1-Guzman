@@ -1,3 +1,5 @@
+import React from 'react'
+
 
 export const IntemCount = ({cantidad, handleSumar, handleRestar, handleAgregar}) => {
 

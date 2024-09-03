@@ -8,7 +8,7 @@ import { LogoReal } from './Logoreal';
 
 export const NavBar = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary ">
       <Container>
         <LogoReal />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

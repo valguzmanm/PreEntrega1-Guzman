@@ -61,14 +61,11 @@
 }
 
 .titulo h2{
-    width: 100%;
     text-align: center;
-    padding-top: 1rem;
     font-family: 'Times New Roman', Times, serif;
   }
 
   .titulo-carta {
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
   }
   
@@ -94,7 +91,9 @@
 }
 
 .main-title {
-    margin-top: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+
 }
 
 .navbar {
@@ -234,15 +233,12 @@
 }
 
 .formulario input {
-    padding: .5rem;
     width: 18rem;
-    border-radius: .5rem;
-    border: 2px solid black;
 }
 
 .formulario input:focus {
     outline: 0;
-    border: 2px solid var(--clr-main);
+    border: 2px solid var;
     outline: 2px solid var(--clr-main);
 }
 
@@ -271,6 +267,54 @@
   .text-container {
     flex: 1; 
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
   }
   
+/* estilos contacto */
+.contenedor {
+  display: flex;
+}
+
+/* estilos contacto */
+.registrate {
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(184, 182, 182, 0.1);
+  background-color: #fbfcfe; 
+  border: 1px solid #bcb8b8; 
+  width: 350px;
+  align-items: center;
+  display: flex; 
+  flex-direction: column; /* Alinea los elementos en columna */
+}
+
+.formulario input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+.formulario input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.enviar {
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
   
+}
+
+.enviar:hover {
+  background-color: #c1bebe;
+}
