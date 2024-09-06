@@ -19,7 +19,7 @@ export const Checkout = () => {
         productos: carrito,
         total: precioTotal()
       }
-      console.log(pedido)
+      
       
       const pedidosRef = collection(db, "pedidos");
 
@@ -32,9 +32,9 @@ export const Checkout = () => {
 
   if (pedidoId){
     return (
-      <div className="container mt-5">
-          <h1 className="main-title">Muchas gracias por tu compra :) </h1>
-          <p className="main-title">Recuerda que nuestro alimento natural para mascotas debe conservarse <strong>congelado</strong> para mantener su <strong>frescura y calidad</strong>. Es lo mejor que puedes darle a tu peludito para que disfrute de una nutrición <strong>saludable y deliciosa</strong>. 🐾💕 <br />Tu número de pedido es: {pedidoId}</p>
+      <div className="container tamano m-auto mt-5">
+          <h1 className="main-title"><br /> Muchas gracias por tu compra ☺ </h1>
+          <p className="main-title">Recuerda que nuestro alimento natural para mascotas debe conservarse congelado para mantener su frescura y calidad. Es lo mejor que puedes darle a tu peludito para que disfrute de una nutrición saludable y deliciosa. 🐾💕 <br />  <br /> <strong>Tu número de pedido es:</strong> {pedidoId}</p>
       </div>
   )
   }
@@ -48,10 +48,10 @@ export const Checkout = () => {
       <h2 className="main-title fs-4">Ingresa tus datos de envío</h2>
       <form className="formulario" onSubmit={handleSubmit(comprar)}>
 
-          <input type="text" placeholder="Ingresa tu nombre completo" {...register("nombre")} />
-          <input type="text" placeholder="Ingresa tu dirección (casa,apt...)" {...register("direccion")} />
-          <input type="phone" placeholder="Ingresa tu teléfono" {...register("telefono")} />
-          <input type="phone" placeholder="Ingresa tu documento de identificación" {...register("documento")} />
+          <input type="text" required placeholder="Ingresa tu nombre completo" {...register("nombre")} />
+          <input type="text" required placeholder="Ingresa tu dirección (casa,apt...)" {...register("direccion")} />
+          <input type="number" required className="hidden-arrows" placeholder="Ingresa tu teléfono" {...register("telefono")} />
+          <input type="number" required className="hidden-arrows" placeholder="Ingresa tu documento de identificación" {...register("documento")} />
            <div className="m-auto">
           <button className="enviar " type="submit">Comprar</button>
 

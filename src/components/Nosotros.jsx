@@ -6,7 +6,7 @@ import manasaImage from '../assets/manasa.png';
 export const Nosotros = () => {
   useEffect(() => {
     const clickear = () => {
-      console.log("Click");
+    
     };
 
     window.addEventListener("click", clickear);
